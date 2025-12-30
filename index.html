@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caliq Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Caliq" />
+  <style>
+    :root{
+      --bg0:#070A12;
+      --bg1:#0B1020;
+      --card:rgba(255,255,255,.08);
+      --card2:rgba(255,255,255,.06);
+      --stroke:rgba(255,255,255,.14);
+      --text:rgba(255,255,255,.88);
+      --muted:rgba(255,255,255,.68);
+      --muted2:rgba(255,255,255,.55);
+      --accent:#5B7CFA;
+      --accent2:#7CF6FF;
+      --danger:#FF6B6B;
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(91,124,250,.26), transparent 55%),
+        radial-gradient(800px 520px at 85% 0%, rgba(124,246,255,.14), transparent 55%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(91,124,250,.16), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      min-height:100vh;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 18px 64px;
+    }
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom: 22px;
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    .logoRow{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .dot{
+      width:14px; height:14px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 6px rgba(91,124,250,.14);
+      flex:0 0 auto;
+    }
+    h1{
+      font-size: 28px;
+      margin:0;
+      letter-spacing: .2px;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0;
+      font-size: 14px;
+      line-height:1.45;
+    }
+    .pill{
+      align-self:flex-start;
+      padding:10px 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 12px;
+      white-space:nowrap;
+      box-shadow: var(--shadow);
+    }
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin: 14px 0 22px;
+    }
+    nav a{
+      padding: 8px 10px;
+      border: 1px solid var(--stroke);
+      background: var(--card2);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    nav a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.22);
+      text-decoration:none;
+    }
+    .card{
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, var(--card), rgba(255,255,255,.04));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 18px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    h2{
+      margin: 26px 0 10px;
+      font-size: 18px;
+      letter-spacing:.2px;
+    }
+    h3{
+      margin: 18px 0 8px;
+      font-size: 15px;
+      color: rgba(255,255,255,.86);
+    }
+    p, li{
+      color: var(--muted);
+      line-height: 1.62;
+      font-size: 14px;
+    }
+    ul{margin: 10px 0 10px 18px}
+    code{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 2px 6px;
+      border: 1px solid var(--stroke);
+      background: rgba(0,0,0,.22);
+      border-radius: 8px;
+      color: rgba(255,255,255,.86);
+    }
+    .note{
+      margin-top: 14px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(0,0,0,.18);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (min-width: 820px){
+      .grid{grid-template-columns: 1fr 1fr;}
+    }
+    .mini{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      border-radius: 16px;
+      padding: 14px 14px;
+    }
+    .mini b{color: rgba(255,255,255,.86)}
+    footer{
+      margin-top: 24px;
+      color: var(--muted2);
+      font-size: 12px;
+      line-height:1.6;
+      text-align:center;
+    }
+    .danger{
+      color: rgba(255,255,255,.88);
+      border-left: 3px solid var(--danger);
+      padding-left: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logoRow">
+          <div class="dot" aria-hidden="true"></div>
+          <h1>Caliq Privacy Policy</h1>
+        </div>
+        <p class="sub">
+          This policy explains what Caliq processes, what it does not store, and your rights under the GDPR.
+        </p>
+      </div>
+      <div class="pill">Last updated: <span id="lastUpdated">[SET_DATE]</span></div>
+    </header>
+
+    <nav aria-label="Policy sections">
+      <a href="#controller">Controller</a>
+      <a href="#summary">Summary</a>
+      <a href="#data">Data we process</a>
+      <a href="#purposes">Purposes and legal bases</a>
+      <a href="#sharing">Sharing and processors</a>
+      <a href="#transfers">International transfers</a>
+      <a href="#retention">Retention</a>
+      <a href="#rights">Your rights</a>
+      <a href="#security">Security</a>
+      <a href="#children">Children</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="card">
+      <h2 id="controller">1) Who is responsible</h2>
+      <p>
+        <b>Controller:</b> <span>Tridib Banerjee</span><br/>
+        <b>Address:</b> <span>Hesse, Germany</span><br/>
+        <b>Email:</b> <a href="mailto:caliq.app@outlook.com">caliq.app@outlook.com</a>
+      </p>
+
+      <h2 id="summary">2) Plain-language summary</h2>
+      <div class="grid">
+        <div class="mini">
+          <p><b>Calendar and notes stay on your device.</b><br/>
+            Caliq reads and writes events using Apple Calendar frameworks on your device. Caliq does not run a Caliq account system and does not store your calendar database on Caliq servers.
+          </p>
+        </div>
+        <div class="mini">
+          <p><b>Online parsing is optional.</b><br/>
+            If you enable online parsing, your typed prompt is transmitted to Caliq’s relay server and then to an AI provider to extract event details. We do not use this content for advertising.
+          </p>
+        </div>
+        <div class="mini">
+          <p><b>No selling of data.</b><br/>
+            We do not sell your personal data.
+          </p>
+        </div>
+        <div class="mini">
+          <p><b>Minimal operational logs.</b><br/>
+            Like most internet services, our servers may process IP addresses and basic request metadata for security and reliability.
+          </p>
+        </div>
+      </div>
+
+      <div class="note danger">
+        Important: If you keep verbose server logs that include prompt text or extracted event content, that becomes stored user content.
+        For GDPR clarity, we recommend disabling prompt logging in production and keeping only minimal error logs.
+      </div>
+
+      <h2 id="data">3) What personal data Caliq processes</h2>
+
+      <h3>3.1 Data processed on your device</h3>
+      <ul>
+        <li><b>Notes you type</b> and related app state (stored locally on your device, depending on your iOS settings and backups).</li>
+        <li><b>Calendar data</b> (events, calendars, reminders where applicable) accessed via Apple frameworks when you grant permission.</li>
+      </ul>
+      <p>
+        This data is processed locally to show your schedule, detect conflicts, and create events.
+      </p>
+
+      <h3>3.2 Data transmitted for online parsing (only if you use it)</h3>
+      <ul>
+        <li><b>Prompt content</b> you submit for parsing (which may include personal data if you type it).</li>
+        <li><b>Reference time and timezone</b> used to resolve relative dates.</li>
+        <li><b>Parsed output</b> (event titles, times, location) returned to your device.</li>
+      </ul>
+
+      <h3>3.3 Technical data (typical for web requests)</h3>
+      <ul>
+        <li><b>IP address</b> and basic request metadata (timestamp, status codes, request sizes) processed by our hosting and security providers.</li>
+        <li><b>Device attestation tokens</b> (if App Attest or similar anti-abuse checks are enabled) for fraud prevention.</li>
+      </ul>
+
+      <h3>3.4 Payments and subscriptions</h3>
+      <ul>
+        <li>Subscriptions are processed by <b>Apple</b> via In-App Purchase. Caliq does not receive your payment card details.</li>
+        <li>Caliq may process <b>subscription status</b> and transaction identifiers as needed to unlock features and prevent abuse.</li>
+      </ul>
+
+      <h2 id="purposes">4) Why we process data and the GDPR legal bases</h2>
+      <ul>
+        <li><b>Provide core app functionality</b> (create and display events, detect conflicts): <b>Contract</b> (Art. 6(1)(b)) and <b>Legitimate interests</b> (Art. 6(1)(f)).</li>
+        <li><b>Online parsing feature</b> (if used): <b>Contract</b> (Art. 6(1)(b)).</li>
+        <li><b>Security and abuse prevention</b> (rate limiting, fraud detection, reliability): <b>Legitimate interests</b> (Art. 6(1)(f)).</li>
+        <li><b>Legal compliance</b> (tax, accounting, regulatory requests if applicable): <b>Legal obligation</b> (Art. 6(1)(c)).</li>
+      </ul>
+
+      <h2 id="sharing">5) Who we share data with (processors)</h2>
+      <p>
+        We share data only to operate Caliq and only when needed for the chosen features.
+      </p>
+      <ul>
+        <li><b>Apple</b> (In-App Purchases, App Store distribution). Apple acts as an independent controller for payment processing.</li>
+        <li><b>Cloudflare</b> (relay/edge services for online parsing requests, security, and performance), if you use Cloudflare Workers.</li>
+        <li><b>OpenAI</b> (AI model provider used for online parsing), if you enable online parsing.</li>
+        <li><b>GitHub Pages</b> (this policy hosting). GitHub may process visitor IP addresses and standard web logs to serve this page.</li>
+      </ul>
+      <p>
+        If you use additional providers (analytics, crash reporting, ads), list them here before shipping.
+      </p>
+
+      <h2 id="transfers">6) International transfers</h2>
+      <p>
+        Some processors may handle data outside the EEA. Where applicable, transfers rely on recognized safeguards such as
+        the European Commission’s adequacy decisions or Standard Contractual Clauses.
+      </p>
+
+      <h2 id="retention">7) How long we keep data</h2>
+      <ul>
+        <li><b>On-device content</b> is retained until you delete it, remove the app, or your device settings remove it.</li>
+        <li><b>Online parsing requests</b> are processed to return results. Caliq aims not to store prompt content in persistent logs.</li>
+        <li><b>Operational logs</b> (if kept) are retained only as long as necessary for security, debugging, and service reliability, then deleted or anonymized.</li>
+        <li><b>Purchase records</b> are handled primarily by Apple. Caliq retains only what is necessary to validate entitlements and prevent abuse.</li>
+      </ul>
+
+      <h2 id="rights">8) Your GDPR rights</h2>
+      <p>
+        Depending on your situation, you have the right to:
+      </p>
+      <ul>
+        <li>Access your personal data</li>
+        <li>Rectify inaccurate data</li>
+        <li>Delete data</li>
+        <li>Restrict processing</li>
+        <li>Object to processing based on legitimate interests</li>
+        <li>Data portability (where applicable)</li>
+        <li>Withdraw consent (where processing is based on consent)</li>
+        <li>Lodge a complaint with your supervisory authority</li>
+      </ul>
+      <p>
+        Because most content is stored on your device, the fastest way to delete it is usually within the app, your device settings, or by uninstalling the app.
+      </p>
+
+      <h2 id="security">9) Security</h2>
+      <p>
+        We apply reasonable technical and organizational measures to protect data, including transport security (HTTPS) and
+        access controls for operational systems. No method of transmission or storage is completely secure.
+      </p>
+
+      <h2 id="children">10) Children</h2>
+      <p>
+        Caliq is not intended for children under 16 without parental involvement. If you believe a child has provided personal data through online parsing,
+        contact us and we will address it.
+      </p>
+
+      <h2>11) Changes to this policy</h2>
+      <p>
+        We may update this policy to reflect changes in the app or legal requirements. The “Last updated” date will be revised accordingly.
+      </p>
+
+      <h2 id="contact">12) Contact</h2>
+      <p>
+        Email: <a href="mailto:caliq.app@outlook.com">caliq.app@outlook.com</a><br/>
+        Controller: <span>Tridib Banerjee</span>
+      </p>
+
+      <footer>
+        © <span id="year"></span> Caliq. All rights reserved.
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    // Set these two values when you publish:
+    // 1) Replace [SET_DATE] near the top with a real date, or set it here.
+    const LAST_UPDATED = null; // e.g. "2025-12-30"
+    const lastEl = document.getElementById("lastUpdated");
+    if (LAST_UPDATED) lastEl.textContent = LAST_UPDATED;
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
