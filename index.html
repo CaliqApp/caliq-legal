@@ -6,179 +6,232 @@
   <title>Caliq Privacy Policy</title>
   <meta name="description" content="Privacy Policy for Caliq" />
   <style>
+  /* Light mode is the default. Dark mode overrides are below. */
+  :root{
+    /* Caliq purple accents */
+    --accent:#8B5CF6;   /* purple */
+    --accent2:#D946EF;  /* magenta-pink */
+
+    /* Light theme */
+    --bg0:#F7F7FB;
+    --bg1:#FFFFFF;
+
+    --card:rgba(18, 18, 30, .06);
+    --card2:rgba(18, 18, 30, .04);
+    --stroke:rgba(18, 18, 30, .12);
+
+    --text:rgba(10, 10, 16, .90);
+    --muted:rgba(10, 10, 16, .70);
+    --muted2:rgba(10, 10, 16, .55);
+
+    --danger:#E11D48;
+
+    --shadow: 0 18px 50px rgba(0,0,0,.10);
+    --radius:18px;
+
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  }
+
+  @media (prefers-color-scheme: dark) {
     :root{
+      /* Dark theme */
       --bg0:#070A12;
       --bg1:#0B1020;
+
       --card:rgba(255,255,255,.08);
       --card2:rgba(255,255,255,.06);
       --stroke:rgba(255,255,255,.14);
+
       --text:rgba(255,255,255,.88);
       --muted:rgba(255,255,255,.68);
       --muted2:rgba(255,255,255,.55);
-      --accent:#5B7CFA;
-      --accent2:#7CF6FF;
-      --danger:#FF6B6B;
+
       --shadow: 0 18px 50px rgba(0,0,0,.35);
-      --radius:18px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:var(--sans);
-      color:var(--text);
-      background:
-        radial-gradient(900px 500px at 15% 10%, rgba(91,124,250,.26), transparent 55%),
-        radial-gradient(800px 520px at 85% 0%, rgba(124,246,255,.14), transparent 55%),
-        radial-gradient(1200px 700px at 50% 110%, rgba(91,124,250,.16), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      min-height:100vh;
-    }
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 40px 18px 64px;
-    }
-    header{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:18px;
-      margin-bottom: 22px;
-    }
-    .brand{
-      display:flex;
-      flex-direction:column;
-      gap:6px;
-    }
-    .logoRow{
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .dot{
-      width:14px; height:14px; border-radius:50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(91,124,250,.14);
-      flex:0 0 auto;
-    }
-    h1{
-      font-size: 28px;
-      margin:0;
-      letter-spacing: .2px;
-    }
-    .sub{
-      color:var(--muted);
-      margin:0;
-      font-size: 14px;
-      line-height:1.45;
-    }
-    .pill{
-      align-self:flex-start;
-      padding:10px 12px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 12px;
-      white-space:nowrap;
-      box-shadow: var(--shadow);
-    }
-    nav{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin: 14px 0 22px;
-    }
-    nav a{
-      padding: 8px 10px;
-      border: 1px solid var(--stroke);
-      background: var(--card2);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-    nav a:hover{
-      color: var(--text);
-      border-color: rgba(255,255,255,.22);
-      text-decoration:none;
-    }
-    .card{
-      border:1px solid var(--stroke);
-      background: linear-gradient(180deg, var(--card), rgba(255,255,255,.04));
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 22px 18px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-    h2{
-      margin: 26px 0 10px;
-      font-size: 18px;
-      letter-spacing:.2px;
-    }
-    h3{
-      margin: 18px 0 8px;
-      font-size: 15px;
-      color: rgba(255,255,255,.86);
-    }
-    p, li{
-      color: var(--muted);
-      line-height: 1.62;
-      font-size: 14px;
-    }
-    ul{margin: 10px 0 10px 18px}
-    code{
-      font-family: var(--mono);
-      font-size: 12px;
-      padding: 2px 6px;
-      border: 1px solid var(--stroke);
-      background: rgba(0,0,0,.22);
-      border-radius: 8px;
-      color: rgba(255,255,255,.86);
-    }
-    .note{
-      margin-top: 14px;
-      padding: 12px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.16);
-      background: rgba(0,0,0,.18);
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      margin-top: 12px;
-    }
-    @media (min-width: 820px){
-      .grid{grid-template-columns: 1fr 1fr;}
-    }
-    .mini{
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      border-radius: 16px;
-      padding: 14px 14px;
-    }
-    .mini b{color: rgba(255,255,255,.86)}
-    footer{
-      margin-top: 24px;
-      color: var(--muted2);
-      font-size: 12px;
-      line-height:1.6;
-      text-align:center;
-    }
-    .danger{
-      color: rgba(255,255,255,.88);
-      border-left: 3px solid var(--danger);
-      padding-left: 12px;
-      margin-top: 10px;
-    }
-  </style>
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 15% 10%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 55%),
+      radial-gradient(800px 520px at 85% 0%, color-mix(in srgb, var(--accent2) 18%, transparent), transparent 55%),
+      radial-gradient(1200px 700px at 50% 110%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--bg0), var(--bg1));
+    min-height:100vh;
+  }
+
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .wrap{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 18px 64px;
+  }
+
+  header{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:18px;
+    margin-bottom: 22px;
+  }
+
+  .brand{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .logoRow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .dot{
+    width:14px; height:14px; border-radius:50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent);
+    flex:0 0 auto;
+  }
+
+  h1{
+    font-size: 28px;
+    margin:0;
+    letter-spacing: .2px;
+  }
+
+  .sub{
+    color:var(--muted);
+    margin:0;
+    font-size: 14px;
+    line-height:1.45;
+  }
+
+  .pill{
+    align-self:flex-start;
+    padding:10px 12px;
+    border:1px solid var(--stroke);
+    background: var(--card2);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 12px;
+    white-space:nowrap;
+    box-shadow: var(--shadow);
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin: 14px 0 22px;
+  }
+
+  nav a{
+    padding: 8px 10px;
+    border: 1px solid var(--stroke);
+    background: var(--card2);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  nav a:hover{
+    color: var(--text);
+    border-color: color-mix(in srgb, var(--stroke) 60%, transparent);
+    text-decoration:none;
+  }
+
+  .card{
+    border:1px solid var(--stroke);
+    background: linear-gradient(180deg, var(--card), color-mix(in srgb, var(--card) 55%, transparent));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px 18px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  h2{
+    margin: 26px 0 10px;
+    font-size: 18px;
+    letter-spacing:.2px;
+  }
+
+  h3{
+    margin: 18px 0 8px;
+    font-size: 15px;
+    color: color-mix(in srgb, var(--text) 94%, transparent);
+  }
+
+  p, li{
+    color: var(--muted);
+    line-height: 1.62;
+    font-size: 14px;
+  }
+
+  ul{margin: 10px 0 10px 18px}
+
+  code{
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 2px 6px;
+    border: 1px solid var(--stroke);
+    background: color-mix(in srgb, var(--bg1) 70%, rgba(0,0,0,.12));
+    border-radius: 8px;
+    color: color-mix(in srgb, var(--text) 92%, transparent);
+  }
+
+  .note{
+    margin-top: 14px;
+    padding: 12px 12px;
+    border-radius: 14px;
+    border: 1px solid color-mix(in srgb, var(--stroke) 75%, transparent);
+    background: color-mix(in srgb, var(--bg1) 60%, transparent);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: 820px){
+    .grid{grid-template-columns: 1fr 1fr;}
+  }
+
+  .mini{
+    border:1px solid color-mix(in srgb, var(--stroke) 80%, transparent);
+    background: var(--card2);
+    border-radius: 16px;
+    padding: 14px 14px;
+  }
+
+  .mini b{color: color-mix(in srgb, var(--text) 92%, transparent)}
+
+  footer{
+    margin-top: 24px;
+    color: var(--muted2);
+    font-size: 12px;
+    line-height:1.6;
+    text-align:center;
+  }
+
+  .danger{
+    color: color-mix(in srgb, var(--text) 92%, transparent);
+    border-left: 3px solid var(--danger);
+    padding-left: 12px;
+    margin-top: 10px;
+  }
+</style>
 </head>
 
 <body>
